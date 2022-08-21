@@ -1,0 +1,45 @@
+
+* {
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+
+body {
+background: linear-gradient(25deg, #8600b3 50%, #cc33ff 50%);
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+h1 {
+position: absolute;
+top: 30%;
+font-size: 60px;
+color: white;
+}
+
+.box {
+width: 500px;
+height: 50px;
+background-color: white;
+border-radius: 30px;
+display: flex;
+align-items: center;
+padding: 20px;
+}
+
+.box>i {
+font-size: 20px;
+color: #777;
+}
+
+.box>input {
+flex: 1;
+height: 40px;
+border: none;
+outline: none;
+font-size: 18px;
+padding-left: 10px;
+}
