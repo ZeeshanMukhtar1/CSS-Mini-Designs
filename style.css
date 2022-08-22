@@ -1,0 +1,46 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    background-color: black;
+}
+
+.txt {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(-45deg, #6355a4, red, #e89a3e, aqua);
+    background-size: 300%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    font-size: 5vw;
+    letter-spacing: px;
+    word-spacing: 10px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* -webkit-text-fill-color: transparent;/ */
+    animation: zee 1s linear infinite;
+}
+
+@keyframes zee {
+    0% {
+        background-position: 0px 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0px 50%;
+    }
+}
