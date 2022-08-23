@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.heading {
+    background-color: limegreen;
+    cursor: pointer;
+}
+
+.heading h1 {
+    color: #fff;
+    display: grid;
+    place-items: center;
+    padding: 8px;
+}
+
+nav {
+    background-color: goldenrod;
+    display: grid;
+    place-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li :hover {
+    transition: 1.5s;
+    background-color: crimson;
+    color: white;
+}
+
+.active {
+    background-color: crimson;
+    color: white;
+}
+
+section {
+    margin-top: 3px;
+}
+
+.btn {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+section img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 60px;
+    cursor: pointer;
+    /* transition: 0.3s ease-in; */
+}
+
+.items img:hover {
+    transform: scale(1.04);
+}
+
+.items h3 {
+    text-align: center;
+    padding: 5px;
+}
+
+.items button {
+    text-align: center;
+    padding: 5px 20px;
+    background-color: green;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    display: block;
+    margin: 0;
+}
+
+.items button :hover {
+    transform: scale(1.04);
+}
+
+/* making it responsive  */
+@media screen and (max-width:1000px) {
+    .items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width:768px) {
+        .items {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
